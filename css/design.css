@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary: #81E6D9;
+    --secondary: #FF63C3;
+    --background: #202023;
+    --header: #303033;
+    --line: #525252;
+}
+
+body {
+    background-color: var(--background);
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+}
+
+/* NAVIGATION BAR */
+a {
+    color: white;
+}
+
+.header {
+    background-color: var(--header);
+    width: 100%;
+}
+
+.header ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+.header ul a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.header ul a:hover {
+    text-decoration: underline;
+}
+
+.header .logo {
+    float: left;
+    display: block;
+    padding: 10px 30px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+    background: white;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon::before {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon::after {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+/* TRANSITION BURGER MENU */
+
+.header .menu-btn:checked~.menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/* SECTIONS */
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    margin: 0 auto;
+    padding: 0.9rem;
+    max-width: 600px;
+}
+
+.section-info h3 {
+    padding: 10px 0;
+    text-decoration: underline 4px grey;
+}
+
+
+/* rolling-cat */
+.main {
+    padding: 2rem 0;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.main img {
+    width: 100%;
+    height: auto;
+}
+
+/* homepage-landing */
+.homepage-design {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 1rem;
+}
+
+.homepage-design img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* CASE STUDY */
+
+.case-study {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.case-study img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* contact */
+
+.contact {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.contact h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.contact p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 15px 0;
+    opacity: 0.7;
+}
+
+.contact button {
+    background-color: var(--primary);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-radius: 3px;
+}
+
+.contact i {
+    margin-right: 10px;
+    opacity: 0.8;
+}
+
+.contact .btn:hover {
+    transition: 0.4s ease;
+    cursor: pointer;
+    background-color: #2ADAC3;
+}
+
+
+/* footer-section*/
+footer p {
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.7;
+    margin-top: 20px;
+    height: 50px;
+}
+
+
+
+/* MEDIA QUERY */
+
+/* NAVIGATION BAR */
+
+/* this size is for ipad resolution 
+   above 768px
+*/
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .logo {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+    }
+
+    .header li {
+        float: left;
+    }
+
+    .header li a {
+        padding: 20px 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+
+    .homepage-design {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 1rem;
+    }
+
+    .homepage-design img {
+        width: 100%;
+        height: auto
+    }
+
+    .landing-page p {
+        text-align: center;
+    }
+
+}
