@@ -205,6 +205,7 @@ a {
 }
 
 .contact button {
+    color: var(--background);
     background-color: var(--primary);
     padding: 10px 20px;
     font-size: 16px;
@@ -221,7 +222,6 @@ a {
 .contact .btn:hover {
     transition: 0.4s ease;
     cursor: pointer;
-    color: var(--background);
     background-color: #2ADAC3;
 }
 
