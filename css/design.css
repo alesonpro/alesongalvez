@@ -248,6 +248,12 @@ footer p {
     .header {
         display: flex;
         justify-content: center;
+        position: fixed;
+        z-index: 100;
+    }
+
+    .main img {
+        margin-top: 10vh;
     }
 
     .header .logo {

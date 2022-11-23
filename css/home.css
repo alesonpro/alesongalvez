@@ -320,8 +320,10 @@ footer p {
 */
 @media (min-width: 768px){
     .header{
-       display: flex;
-       justify-content: center;
+        display: flex;
+        justify-content: center; 
+        position: fixed;
+        z-index: 100;
     }
 
     .header .logo{
@@ -361,6 +363,7 @@ footer p {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 10vh;
     }
 
     .profile-info .profile-right img{

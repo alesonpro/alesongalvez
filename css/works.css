@@ -164,6 +164,11 @@ a {
     gap: 1rem;
 }
 
+.homepage-design p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
 .homepage-design img {
     max-width: 350px;
     width: 100%;
@@ -199,6 +204,12 @@ footer p {
     .header {
         display: flex;
         justify-content: center;
+        position: fixed;
+        z-index: 100;
+    }
+
+    .main img{
+        margin-top: 10vh;
     }
 
     .header .logo {
@@ -236,7 +247,7 @@ footer p {
 
     .homepage-design img {
         width: 100%;
-        height: auto
+        height: auto;
     }
 
     .landing-page p {
