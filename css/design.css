@@ -199,7 +199,7 @@ a {
 .contact p {
     width: 50%;
     margin: 0 auto;
-    font-size: 14px;
+    font-size: 15px;
     padding: 15px 0;
     opacity: 0.7;
 }
@@ -221,6 +221,7 @@ a {
 .contact .btn:hover {
     transition: 0.4s ease;
     cursor: pointer;
+    color: var(--background);
     background-color: #2ADAC3;
 }
 

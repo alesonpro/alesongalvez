@@ -17,7 +17,7 @@ body{
     background-color: var(--background);
     color: white;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     width: 100%;
     height: 100vh;
 }
@@ -140,19 +140,20 @@ a{
 
 .section .profile-left .sub-title{
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 10px;
     opacity: 0.9;
 }
 
 .section .profile-left p{
-    font-size: 13px;
-    padding: 5px 0;
+    font-size: 15px;
+    padding: 10px 0;
+    letter-spacing: 1px;
     opacity: 0.8;
 }
 
 .section .profile-left a{
-    font-size: 14px;
+    font-size: 15px;
     color: var(--primary);
     padding: 10px 0;
 }
@@ -177,12 +178,13 @@ a{
 /* work */
 .section-info h3{
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: underline 4px grey;
 }
 
 .section-info p{
-    font-size: 13px;
+    font-size: 15px;
+    letter-spacing: 1px;
     font-weight: 400;
 }
 
@@ -202,6 +204,7 @@ a{
     align-items: center;
     padding: 8px 0;
     font-size: 14px;
+    
 }
 
 .section-info .button .btn{
@@ -209,8 +212,8 @@ a{
     border-radius: 5px;
     padding: 5px 25px;
     text-decoration: none;
-    font-weight: 500;
-    color: black;
+    font-weight: bold;
+    color: var(--background);
 }
 
 .section-info .button .btn:hover {
@@ -227,9 +230,14 @@ a{
 }
 
 .date {
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: bold;
     margin-right: 40px;
     font-weight: 500;
+}
+
+.year{
+    font-weight: bold;
 }
 
 .date-info{
@@ -258,7 +266,7 @@ a{
 }
 
 .social-right a{
-    font-size: 13px;
+    font-size: 15px;
     text-decoration:none;
     cursor: pointer;
     color: var(--primary)
@@ -338,6 +346,13 @@ footer p {
 
     .header .menu-icon{
         display: none;
+    }
+
+    .date {
+        font-size: 14px;
+        font-weight: bolder;
+        margin-right: 40px;
+        font-weight: 500;
     }
 
 
