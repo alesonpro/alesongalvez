@@ -250,6 +250,8 @@ footer p {
         justify-content: center;
         position: fixed;
         z-index: 100;
+        background: #20202385;
+        backdrop-filter: blur(10px);
     }
 
     .main img {
