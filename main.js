@@ -13,7 +13,9 @@ toggle.addEventListener('click', function(){
         body.style.color = 'black';
         body.style.transition = '1s';
     }
+
 });
+
 
 
 
