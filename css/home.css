@@ -354,9 +354,12 @@ footer p {
 
     .date {
         font-size: 14px;
-        font-weight: bolder;
         margin-right: 40px;
         font-weight: 500;
+    }
+
+    .year {
+        font-weight: bold;
     }
 
 
