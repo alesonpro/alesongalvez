@@ -47,13 +47,11 @@ a{
     text-decoration: underline;
 }
 
-.header .logo{
-    float: left;
-    display: block;
-    padding: 10px 30px;
-    font-size: 14px;
-    text-decoration: none;
+.header .logo img{
+    width: 30px;
+    height: 30px;
 }
+
 
 .header .menu{
     clear: both;
