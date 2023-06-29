@@ -49,9 +49,11 @@ a{
 
 .header .logo img{
     width: 30px;
-    height: 30px;
+    height: 25px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: auto;
 }
-
 
 .header .menu{
     clear: both;
