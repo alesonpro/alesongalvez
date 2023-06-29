@@ -334,6 +334,14 @@ footer p {
         align-items: center;
     }
 
+    .header .logo img {
+        width: 30px;
+        height: 25px;
+        margin-top: 1px;
+        margin-left: 15px;
+        margin-right: auto;
+    }
+
     .header li{
         float: left;
     }
