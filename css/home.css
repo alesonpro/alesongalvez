@@ -179,7 +179,7 @@ a{
 .section-info h3{
     padding: 10px 0;
     font-size: 18px;
-    text-decoration: underline 4px grey;
+    /* text-decoration: underline 4px grey; */
 }
 
 .section-info p{
@@ -242,6 +242,20 @@ a{
 
 .date-info{
     font-weight: 400;
+}
+
+/* design principles */
+.design-principles{
+    padding-top: 15px;
+}
+
+.highlight{
+    color: var(--secondary);
+}
+
+.design-principles > p:first-child{
+    font-size: 14px;
+    font-weight: bold;
 }
 
 /* social-media */

@@ -137,7 +137,7 @@ a {
 
 .section-info h3 {
     padding: 10px 0;
-    text-decoration: underline 4px grey;
+    /* text-decoration: underline 4px grey; */
 }
 
 
@@ -180,6 +180,10 @@ a {
 .case-study img {
     max-width: 100%;
     height: auto;
+}
+
+.case-study p{
+    text-align: center;
 }
 
 /* contact */
